@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+
+    "name": "",
+    "description": "This extension keeps track of how much time you spend on websites.",
+    "version": "0.1",
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "options_ui":{
+        "page": "timer.html",
+        "open_in_tab": false
+    },
+
+    "browser_action": {
+        "default_icon": "final48.png",
+        "default_title": "Where did my time go?",
+        "default_popup": "popup.html"
+    },
+    "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+
+
+    "icons": {
+        "48": "final48.png",
+        "128": "final128.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "identity",
+        "storage"
+    ]
+}
