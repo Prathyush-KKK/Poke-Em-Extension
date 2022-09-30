@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rank"
+        android:title="Rank"
+        android:icon="@drawable/trophytrophy"/>
+    <item
+        android:id="@+id/group"
+        android:title="Group"
+        android:icon="@drawable/groupfriends"/>
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/vectorhome"/>
+
+    <item
+        android:id="@+id/list"
+        android:title="Apps"
+        android:icon="@drawable/indentlist"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/groupprofile"/>
+
+</menu>
