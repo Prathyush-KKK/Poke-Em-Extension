@@ -1,0 +1,29 @@
+{
+    "name": "Poke 'Em",
+    "description": "This extension keeps track of how much time you spend on websites.",
+    "version": "0.2",
+    "manifest_version": 2,
+    "icons": {
+        "48": "./src/images/final48.png",
+        "128": "./src/images/final128.png"
+    },
+    "background": {
+        "scripts": [
+            "./src/js/background.js"
+        ]
+    },
+
+    "options_ui":{
+        "page": "./src/html/timer.html",
+        "open_in_tab": false
+    },
+    "browser_action": {
+        "default_icon": "./src/images/final128.png",
+        "default_title": "Poke 'Em!",
+        "default_popup": "./src/html/popup.html"
+    },
+    "permissions": [        "tabs",
+    "identity",
+    "storage"],
+    "content_security_policy": "script-src 'self' https://cdn.firebase.com https://apis.google.com https://www.gstatic.com; object-src 'self'"
+}
