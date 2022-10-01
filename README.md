@@ -7,17 +7,18 @@ Our app assissts digital well being by combining screen-time awareness with the 
 ## 👨‍💻 Tech stack
 
 ### Here's a brief high-level overview of the tech stack the Well app uses:
+**Link to the Android applications repository- [Poke 'Em Android App](https://github.com/An-Yay/pokeem/tree/main/app)**
 
 - This project uses the [Kotlin app development framework](https://developer.android.com/kotlin). 
 Kotlin is an open-source statically typed programming language that targets the JVM, Android, JavaScript and Native.
-- For persistent storage (database), the app uses the [Appwrite](https://appwrite.io/) package which allows the app to create a custom storage schema and save it to a local database.
+- For persistent storage (database), the app uses the [Firebase](https://firebase.google.com/) package which allows the app to create a custom storage schema and save it to a local database.
 - To send local push notifications, the app uses 
 - The app uses the font ["SF Pro"](https://developer.apple.com/fonts/) as its main font, and the design of the app adheres to the material design guidelines.
 
 ### An overview of our browser extension:
 
 - Javascript is used for running the extension on [Chromium]('https://www.chromium.org/Home/') browsers.
-- [Firebase](https://firebase.google.com/) is used for user authentication.
+- [Appwrite](https://firebase.google.com/) is used for user authentication.
 
 ## 📱 User Interface
 ### Extension: 
