@@ -1,120 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <script src="./../js/popup-init.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="./../js/popup-init.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
-    />
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
 
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
-        width: 300px;
-        height: 550px;
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 5px solid #a9a298;
-        border-radius: 30px;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  <style>
+    body {
 
-        background-color: #f0ebe3;
-      }
-      #cover {
-        height: 100%;
-        width: 100%;;
-      }
+      margin: 5px;
+      padding: 5px;
 
-      #my_sign_in {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+      width: 300px;
+      height: 550px;
 
-        transition-duration: 0.3s;
-
-        cursor: pointer;
-      }
-
-      .sign_in {
-        transform: translate(-50%, -50%);
-        width: 75%;
-        height: 15%;
-        border-radius: 5px;
-
-        color: ghostwhite;
-        background-color: #576f72;
-
-        font-size: 4em;
-      }
-
-      #my_span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-
-        text-align: center;
-        z-index: 50;
-
-        pointer-events: none;
-      }
-
-      #wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 75%;
-        height: 15%;
-
-        cursor: pointer;
-        z-index: 1000;
-      }
-      #headerStyle {
-        background-color: #a9a298;
-        color: #3a4d50;
-        font-size: 24px;
-        font-weight: bold;
-        padding: 5px 15px 3px 15px;
-        display: flex;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        width: 40%;
-        margin: auto;
-      }
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid #a9a298;
+      border-radius: 20px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
 
+      background-color: #f0ebe3;
+    }
 
-    </style>
-  </head>
+    #cover {
+      height: 100%;
+      width: 100%;
+      background-image: url("../images/illustration.png");
+    }
 
-  <body>
-    <div id="cover">
-      <div id="headerStyle">Poke 'Em</div>
-      <div id="wrapper"></div>
-      <div id="my_sign_in" class="sign_in">
-        <span id="my_span">Sign In</span>
-      </div>
-      <div id="sign_in_options"></div>
+    #my_sign_in {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-image: url("../images/illustration.png");
+      transition-duration: 0.3s;
+
+      cursor: pointer;
+    }
+
+    .sign_in {
+      transform: translate(-50%, -50%);
+      width: 55%;
+      height: 13%;
+      border-radius: 12px;
+      margin-top: -52%;
+      color: ghostwhite;
+      background-color: #576f72;
+      font-size: 3em;
+    }
+
+    #my_span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+
+      text-align: center;
+      z-index: 50;
+
+      pointer-events: none;
+    }
+
+    #wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      height: 15%;
+      margin-top: -52%;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #headerStyle {
+      background-color: #a9a298;
+      color: #3a4d50;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 5px 5px 3px 20px;
+      display: flex;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 40%;
+      margin: auto;
+      text-align: center;
+      margin-top: -10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cover">
+    <div id="headerStyle">Poke 'Em</div>
+    <div id="wrapper"></div>
+    <div id="my_sign_in" class="sign_in">
+      <span id="my_span">Sign In</span>
     </div>
-    <script src="./../js/popup-script.js"></script>
-  </body>
+    <div id="sign_in_options"></div>
+  </div>
+  <script src="./../js/popup-script.js"></script>
+  <script src="./../js/popup2.js"></script>
+</body>
+
 </html>

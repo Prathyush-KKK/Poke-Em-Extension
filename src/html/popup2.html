@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./../css/material.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
   <style>
   html{
       font-size: 18px;
@@ -24,7 +28,8 @@
   #listWrapper{
     display: flex;
     flex-direction: row;
-    border: 1px solid #E4DCCF;
+    border-bottom: 1px solid #E4DCCF;
+    border-right: 1px solid #E4DCCF;
     border-radius: 5px;
     margin-bottom: 10px;
     justify-content: space-between;
@@ -58,13 +63,15 @@
   </head>
   <body>
     <header id ="headerStyle">
-     Poke 'Em <img src="./../images/ci:settings-filled.png" id="settings"></img>
+     Poke 'Em <img src="./../images/settings.png" id="settings"></img>
     </header>
     <div id="top_urls">
       </div>
       <div id ="footerStyle">
         Total Time <div id="totalTime"> </div>
       </div>
+
+      <script src="./../js/popup2.js"></script>
 
   </body>
 
