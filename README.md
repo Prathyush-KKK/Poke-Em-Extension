@@ -17,7 +17,7 @@ Kotlin is an open-source statically typed programming language that targets the 
 ### An overview of our browser extension:
 
 - Javascript is used for running the extension on [Chromium]('https://www.chromium.org/Home/') browsers.
-- [Appwrite](https://firebase.google.com/) is used for user authentication.
+- [Firebase](https://firebase.google.com/) is used for user authentication.
 
 ## 📱 User Interface
 ### Extension: 
