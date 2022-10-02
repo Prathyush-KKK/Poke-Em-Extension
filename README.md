@@ -18,19 +18,24 @@ Kotlin is an open-source statically typed programming language that targets the 
 ### An overview of our browser extension:
 
 - Javascript is used for running the extension on [Chromium]('https://www.chromium.org/Home/') browsers.
-- [Appwrite](https://firebase.google.com/) is used for user authentication.
+- [Firebase](https://firebase.google.com/) is used for user authentication.
 
 ## 📱 User Interface
 ### Extension: 
- [![image.png](https://i.postimg.cc/bJV5YrNt/image.png)](https://postimg.cc/5Yvgnxz4) 
+ ![image.png](https://i.postimg.cc/bJV5YrNt/image.png)
 
-[![image.png](https://i.postimg.cc/2jcY3jXT/image.png)]
+![image.png](https://i.postimg.cc/2jcY3jXT/image.png)
 
-[![image.png](https://i.postimg.cc/MpKjVm7V/image.png)](https://postimg.cc/MvNT8Rrp)
+![image.png](https://i.postimg.cc/MpKjVm7V/image.png)
 
 
 ### App: 
-*to be posted*
+
+![image.png](https://media.discordapp.net/attachments/1024588095322075216/1025978221017178122/Screenshot_2022-10-02-09-20-32-31_889a0b0fffcab00cb60be7115ea61b8f.jpg?width=300&height=637)
+
+![image.png](https://media.discordapp.net/attachments/1024588095322075216/1026009096584962068/Screenshot_2022-10-02-11-23-38-48_889a0b0fffcab00cb60be7115ea61b8f.jpg?width=287&height=637)
+
+
 
 
 ## 💛
